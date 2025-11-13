@@ -2,12 +2,11 @@ name: Hola Actions
 
 on:
   push:
-  branches: ["main"]
+    branches: [ "master" ]
 
-  jobs:
-    saludo:
-      runs-on: ubuntu-latest
-      
-      steps:
-        - name: Mensaje de bienvenida
-          run: echo "Hola desde GitHub Actions"
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mensaje de bienvenida
+        run: echo "Hola desde GitHub Actions"
